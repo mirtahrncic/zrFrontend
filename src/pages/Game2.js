@@ -116,6 +116,34 @@ export const GameStudent = () => {
         checkSelectedWord();
     };
 
+
+    const handleTouchStart = (row, col, event) => {
+        event.preventDefault();
+        setIsDragging(true);
+        setStartCell({ row, col });
+        setSelectedCells([{ row, col }]);
+    };
+
+    const handleTouchMove = (row, col, event) => {
+        event.preventDefault();
+        if (isDragging) {
+            const touch = event.touches[0];
+            const target = document.elementFromPoint(touch.clientX, touch.clientY);
+            const cellRow = target.getAttribute('data-row');
+            const cellCol = target.getAttribute('data-col');
+            if (cellRow && cellCol) {
+                const cells = calculateSelectedCells(startCell, { row: parseInt(cellRow), col: parseInt(cellCol) });
+                setSelectedCells(cells);
+            }
+        }
+    };
+
+    const handleTouchEnd = (event) => {
+        event.preventDefault();
+        setIsDragging(false);
+        checkSelectedWord();
+    };
+
     const calculateSelectedCells = (start, end) => {
         const cells = [];
         const dx = end.col - start.col;
@@ -254,6 +282,11 @@ export const GameStudent = () => {
                                     onMouseDown={(event) => handleMouseDown(rowIndex, cellIndex, event)}
                                     onMouseOver={(event) => handleMouseOver(rowIndex, cellIndex, event)}
                                     onMouseUp={handleMouseUp}
+                                    onTouchStart={(event) => handleTouchStart(rowIndex, cellIndex, event)}
+                                    onTouchMove={(event) => handleTouchMove(rowIndex, cellIndex, event)}
+                                    onTouchEnd={handleTouchEnd}
+                                    data-row={rowIndex}
+                                    data-col={cellIndex}
                                 >
                                     {cell}
                                 </div>
