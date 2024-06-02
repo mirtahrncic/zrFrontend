@@ -1157,3 +1157,60 @@ hr {
     width: 200px;
 }
 
+
+@media screen and (max-width: 768px) {
+    /* Apply styles for tablets */
+    .containerGame,
+    .containerWords {
+        width: 100%; /* Set full width on smaller screens */
+        max-width: none; /* Remove maximum width */
+    }
+
+    .containerWholeGame {
+        display: flex;
+        justify-content: center; /* Center the content horizontally */
+        align-items: flex-start; /* Align items at the start of the container */
+        flex-wrap: wrap; /* Allow content to wrap to the next line if necessary */
+    }
+    
+    .containerGame {
+        background-color: #fff;
+        border-radius: 30px;
+        text-align: center;
+        margin: 20px; /* Add some margin between the containers */
+        max-width: 600px; /* Adjust the maximum width to fit tablets */
+        width: 90%; /* Set width to a percentage for responsiveness */
+    }
+    
+    .containerWords {
+        background-color: #fff;
+        border-radius: 30px;
+        text-align: center;
+        margin: 20px; /* Add some margin between the containers */
+        max-width: 300px; /* Adjust the maximum width to fit tablets */
+        width: 90%; /* Set width to a percentage for responsiveness */
+    }
+    
+    .gameTitle {
+        color: #9d66f0;
+        font-size: 2rem; /* Decrease font size for smaller screens */
+        margin: 2vh auto; /* Adjust margin for smaller screens */
+    }
+    
+    .cell {
+        display: inline-block;
+        width: 30px; /* Decrease cell width for smaller screens */
+        height: 30px; /* Decrease cell height for smaller screens */
+        line-height: 30px;
+        font-size: 16px; /* Decrease font size for smaller screens */
+        cursor: pointer;
+    }
+    
+    .wordList {
+        font-size: 1.2rem; /* Decrease font size for smaller screens */
+        margin: 1vh auto; /* Adjust margin for smaller screens */
+    }
+    
+
+}
+
