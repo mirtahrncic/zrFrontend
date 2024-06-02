@@ -1050,6 +1050,8 @@ hr {
     width: 200px;
 }
 
+/*############*/
+
 
 
     .containerWholeGame {
@@ -1061,8 +1063,8 @@ hr {
     .containerGame {
         background-color: #fff;
         border-radius: 30px;
-        height: 450px;
-        width: 500px;
+        height: 600px;
+        width: 700px;
         text-align: center;
     }
     
@@ -1071,8 +1073,8 @@ hr {
         margin-top: 50px;
         background-color: #fff;
         border-radius: 30px;
-        height: 350px;
-        width: 250px;
+        height: 450px;
+        width: 300px;
         text-align: center;
         /*overflow: scroll;*/
     }
