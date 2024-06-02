@@ -1,13 +1,1159 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+/*boje
+svijetlija: #ad85e9
+tamnija: #9d66f0
+zatamnjenje za gumb: #6d5197*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: "Poetsen One", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    background-image: url('pozadina.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
 }
+
+.container {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+
+
+    width: 800px;
+    max-width: 100%;
+    min-height: 520px;
+}
+
+.button:hover {
+    background-color: #6d5197;
+}
+
+
+.container p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.container span {
+    font-size: 12px;
+}
+
+.container a {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.container button {
+    background-color: #9d66f0;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 1px;
+    /*width: 185px;*/
+    width: 200px;
+}
+
+#register {
+    background-color: #9d66f0;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-right: 50px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1px;
+    /*width: 185px;*/
+    width: 200px;
+}
+
+#register:hover {
+    background-color: #6d5197;
+}
+
+.container button:hover {
+    background-color: #6d5197;
+}
+
+.container form {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 80px;
+    height: 100%;
+}
+
+.container input {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+
+.form-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+}
+.form-container2 {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+}
+
+.toggle-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+
+.toggle-container {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0 150px 100px 0;
+}
+
+.toggle-container2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 150px 0 0 100px;
+}
+
+.toggle {
+    height: 100%;
+    background: linear-gradient(to right, #9d66f0, #ad85e9);
+    color: #fff;
+    position: relative;
+    height: 100%;
+    width: 200%;
+}
+
+.toggle2 {
+    height: 100%;
+    background: linear-gradient(to left, #ad85e9, #9d66f0);
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+}
+
+
+.toggle-panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+}
+
+.naslovna {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 50vh;
+}
+
+.naslovniGumb {
+    margin: 12%;
+}
+
+.nastavnik {
+    height: 300px;
+    width: 300px;
+    
+}
+
+.ucenici {
+    height: 300px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.desno {
+    flex: 1;
+    text-align: center;
+    padding-top: 120px;
+
+}
+
+.lijevo {
+    flex: 1;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.logintxt {
+    font-size: 42px;
+}
+
+
+
+
+
+/* ###################################################### */
+
+.containerStudent {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+
+
+    width: 900px;
+    height: 650px;
+}
+
+.student-login-container {
+    text-align: center;
+}
+
+
+.student-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.student-login select {
+    font-size: 16px;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    background-color: #fff;
+    /*font-weight: bold;*/
+    border-color: #9d66f0;
+    border-width: 2px;
+    border-radius: 10px;
+    text-align: center;
+    width: 20vw;
+}
+
+.tekst {
+    font-size: 16px;
+    padding: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    background-color: #fff;
+    font-weight: bold;
+    border-color: #9d66f0;
+    border-width: 2px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.toggleStudent {
+    height: 100%;
+    background: linear-gradient(to left, #9d66f0, #ad85e9);
+    color: #fff;
+    position: relative;
+    height: 100%;
+    width: 200%;
+}
+
+.toggle-containerStudent {
+    position: absolute;
+    top: 0;
+    right: 60%;
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0 150px 100px 0;
+}
+
+.ucenikLogin {
+    width: 250px;
+    height: 250px;
+}
+
+.form-containerStudent {
+    margin: 20px auto;
+    padding-left: 350px;
+    
+}
+
+.containerStudent button {
+    background-color: #9d66f0;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 1px;
+    width: 185px;
+}
+
+#loginStudentBtn:hover {
+    background-color: #6d5197;
+}
+
+
+#loginStudentBtn {
+    margin-left: 20px;
+    background-color: #9d66f0;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid white;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+
+
+
+
+
+/* ###################################################### */
+
+.containerTeacher {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    padding: 5vh;
+
+}
+
+.toggle-containerTeacher {
+    position: absolute;
+    top: 0;
+    right: 65%;
+    width: 35%;
+    height: 100%;
+    overflow: auto;
+    border-radius: 0 150px 100px 0;
+}
+
+.toggleTeacher {
+    height: 100%;
+    background: linear-gradient(to left, #9d66f0, #ad85e9);
+    color: #fff;
+    position: relative;
+    height: 100%;
+    width: 200%;
+}
+
+.toggle-panelTeacher {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+}
+
+.toggle-panelTeacher button:hover {
+    background-color: #6d5197;
+}
+
+.containerTeacher button {
+    background-color: #9d66f0;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btnGroup {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20vw;
+    /*margin-top: 30vh;*/
+    margin-top: 27vh;
+}
+
+.btnGroup button:hover {
+    background-color: #6d5197;
+}
+
+.teacher-input {
+    width: 250px;
+    height: 40px;
+    border-color: #9d66f0;
+    border-width: 2px;
+    border-radius: 10px;
+    text-align: center;
+
+    margin-bottom: 2vh;
+
+    margin-left: 50px;
+    /*margin-bottom: 10px;*/
+}
+
+
+
+.class-selectTeacher {
+    width: 250px;
+    height: 40px;
+    border-color: #9d66f0 ;
+    border-width: 2px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+.form-containerTeacher {
+    margin: 20px;
+    padding-left: 420px;
+}
+
+
+.selectGroup {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7vw;
+    margin-bottom: 60vh;
+}
+
+.selectGroup .game-input {
+    width: 250px;
+    height: 40px;
+    border-color:#9d66f0;
+    border-width: 2px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.selectContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.student-button {
+    background-color: #9d66f0;
+}
+
+
+
+/* ###################################################### */
+
+.overlay {
+    background: rgba(49, 49, 49, 0.8);
+    z-index: 999;
+}
+
+.modal, .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999; 
+}
+
+.modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.6;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 30px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+
+
+.modal-content h2 {
+    color:#9d66f0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content input {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.modal-content button {
+  
+        background-color: #9d66f0;
+        color: #fff;
+        font-size: 12px;
+        padding: 10px 45px;
+        border: 1px solid transparent;
+        border: 1px solid white;
+        border-radius: 8px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        margin-top: 10px;
+        cursor: pointer;
+    
+}
+
+
+
+.modal-content button:hover {
+    background-color:#6d5197;
+}
+
+
+/* ################################## */
+  
+.popisUcenika {
+    margin-top: 3vh;
+    margin-left: 4.5vw;
+}
+
+.student-list {
+    max-height: 400px;
+    overflow: scroll;
+}
+
+.popisUcenika h3 {
+    color: #9d66f0;
+    font-size: 30px;
+    margin-bottom: 2vh;
+    margin-left: 1vw;
+}
+
+.student-list ul {
+    list-style-type: none;
+    margin-left: 3vw;
+    
+}
+
+.student-list li {
+    display: flex; 
+    align-items: center; 
+}
+
+.student-list button.student-button {
+    background-color: #9d66f0;
+    border: none; 
+    border-radius: 8px; 
+    padding: 3px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 10px;
+    height: 25px;
+    width: 25px;
+}
+  
+
+
+
+
+
+
+/* ###################################################### */
+
+.containerStudent {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 900px;
+    height: 650px;
+}
+
+/* zivotinje */
+
+.animal-icon-image {
+    width: 100px; 
+    height: 100px; 
+    border: none;
+    border-radius: 0;
+    background: none;
+    margin-bottom: 20px;
+}
+
+.animal-icons {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.animal-icons-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.second-row {
+    margin-left: 12px; 
+}
+
+.image-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    width: 48px; 
+    height: 48px; 
+}
+
+
+.selected-images-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.selected-images {
+    display: flex;
+    gap: 10px;
+}
+
+
+.pozdrav {
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+/*#####################*/
+
+.containerNewGame {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: scroll;
+    width: 800px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.newGameTitle {
+    color: #9d66f0;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    /*margin-right: 50px;*/
+
+}
+
+.form {
+    /*width: 80%;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.form-group {
+    margin-bottom: 3vh;
+    width: 100%;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    /*margin-left: 2.5vw;*/
+
+}
+
+.input,
+.select {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.game-input {
+    width: 250px;
+    height: 40px;
+    border-color: #9d66f0;
+    border-width: 2px;
+    border-radius: 10px;
+    text-align: center;
+
+    margin-bottom: 2vh;
+
+    
+
+    /*margin-left: 50px;*/
+    /*margin-bottom: 10px;*/
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    /*margin-top: 2vh;*/
+    /*margin-left: 5vw;*/
+}
+
+.containerNewGame button {
+    background-color: #9d66f0;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 15px;
+    /*margin-top: 1px;*/
+    /*margin-top: 5vh;*/
+    width: 200px;
+
+    margin-right: 1vw;
+}
+
+
+.containerNewGame button:hover {
+    background-color: #6d5197;
+}
+
+
+.crtica {
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: 1000;
+}
+
+/* ############################## */
+
+.containerMyGames {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: scroll;
+    width: 1000px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.gameItem {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+    padding-bottom: 10vh;
+    text-align: center; 
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    background-color: #ad85e9;
+    width: 60vw;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.containerMyGames h2 {
+    color: #9d66f0;
+    font-size: 2.5rem;
+    margin: 2vh auto;
+}
+
+.gameItem li {
+    font-size: 1.5rem;
+    text-transform: uppercase; 
+    margin: 0; 
+    padding-top: 80px; 
+    line-height: 1.5; 
+    color: #eee;
+    text-emphasis: bold;
+    font-weight: bold;
+}
+
+/*#########################*/
+
+.containerWholeGame {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.containerGame {
+    background-color: #fff;
+    border-radius: 30px;
+    height: 750px;
+    width: 850px;
+    text-align: center;
+}
+
+.containerWords {
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 650px;
+    width: 350px;
+    text-align: center;
+    /*overflow: scroll;*/
+}
+
+.gameTitle {
+    color: #9d66f0;
+    font-size: 2.5rem;
+    margin: 4vh auto;
+    
+}
+
+
+.cell {
+    display: inline-block;
+    width: 40px; 
+    height: 40px; 
+    line-height: 30px; 
+    /*border: 1px solid #ccc; */
+    font-size: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding-top: 3px;
+}
+
+.wordList {
+    font-size: 1.5rem;
+    margin: 2vh auto;
+    margin-bottom: 0px;
+}
+
+.gameTitle {
+    margin-bottom: 3vh;
+}
+
+ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+li {
+    padding: 5px;
+}
+
+/*####################*/
+
+.cell.selected {
+    background-color: #b690ef;
+    border-radius: 30px;
+}
+
+.cell.found {
+    background-color: #cdbbe9;
+    border-radius: 30px;
+}
+
+.wordList.strikethrough {
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+}
+
+.gameButton {
+    background-color: #9d66f0;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1px;
+    width: 200px;
+    margin-top: 25px;
+
+}
+
+.gameButton:hover {
+    background-color: #6d5197;
+}
+
+.gameButtonWithMargin {
+    background-color: #9d66f0;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1px;
+    width: 200px;
+    margin-top: 25px;
+
+    margin-left: 1vw;
+}
+
+.gameButtonWithMargin:hover {
+    background-color: #6d5197;
+}
+
+/*####################*/
+
+.containerResults {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    /*overflow: scroll;*/
+    overflow: hidden;
+    width: 900px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.fixedContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.scrollableContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: scroll;
+    margin-bottom: 1vh;
+
+}
+
+.resultsTitle {
+    color: #9d66f0;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    
+
+}
+
+
+.resultsColumns {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 10px 3px;
+}
+
+.buttonResult {
+    background-color: #9d66f0;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1px;
+    width: 200px;
+    margin-top: 0.8vh;
+    margin-bottom: 2vh;
+}
+
+.buttonResult:hover {
+    background-color: #6d5197;
+}
+
+/*#####################*/
+
+.wrongPIN {
+    margin-top: 3vh;
+    margin-left: 11vw;
+}
+ 
+.commonErrorsList {
+    font-size: 1.5em; /* Increase this value as needed */
+    line-height: 1.5em; /* Optional: Adjust line height for better readability */
+}
+
+.containerStatistics {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 740px;
+    height: 475px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.buttonStatistics {
+    background-color: #9d66f0;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    width: 200px;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    margin-right: 1vw;
+}
+
+.buttonStatistics:hover {
+    background-color: #6d5197;
+}
+
+.modalTitle {
+    color: #9d66f0;
+    margin-bottom: 2vh;
+}
+
+.modalButton {
+    background-color: #9d66f0;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    width: 200px;
+}
+
