@@ -1168,25 +1168,25 @@ hr {
     .containerGame {
         background-color: #fff;
         border-radius: 30px;
-        height: 650px;
-        width: 750px;
+        height: 550px;
+        width: 650px;
         text-align: center;
     }
     
     .containerWords {
-        margin-left: 100px;
+        margin-left: 50px;
         margin-top: 50px;
         background-color: #fff;
         border-radius: 30px;
-        height: 650px;
-        width: 350px;
+        height: 450px;
+        width: 250px;
         text-align: center;
         /*overflow: scroll;*/
     }
     
     .gameTitle {
         color: #9d66f0;
-        font-size: 2 rem;
+        font-size: 2rem;
         margin: 2vh auto;
         
     }
