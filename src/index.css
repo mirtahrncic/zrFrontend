@@ -1050,119 +1050,125 @@ hr {
     width: 200px;
 }
 
-/*############*/
+    
+.containerWholeGame {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.containerGame {
+    background-color: #fff;
+    border-radius: 30px;
+    height: 750px;
+    width: 850px;
+    text-align: center;
+}
+
+.containerWords {
+    margin-left: 100px;
+    margin-top: 50px;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 650px;
+    width: 350px;
+    text-align: center;
+    /*overflow: scroll;*/
+}
+
+.gameTitle {
+    color: #9d66f0;
+    font-size: 2.5rem;
+    margin: 4vh auto;
+    
+}
+
+
+.cell {
+    display: inline-block;
+    width: 40px; 
+    height: 40px; 
+    line-height: 30px; 
+    /*border: 1px solid #ccc; */
+    font-size: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding-top: 3px;
+}
+
+.wordList {
+    font-size: 1.5rem;
+    margin: 2vh auto;
+    margin-bottom: 0px;
+}
+
+.gameTitle {
+    margin-bottom: 3vh;
+}
+
+ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+li {
+    padding: 5px;
+}
+
+
+/*###################*/
+
+.gameButton {
+    background-color: #9d66f0;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1px;
+    width: 200px;
+    margin-top: 25px;
+
+}
+
+.gameButton:hover {
+    background-color: #6d5197;
+}
+
+.gameButtonWithMargin {
+    background-color: #9d66f0;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1px;
+    width: 200px;
+    margin-top: 25px;
+
+    margin-left: 1vw;
+}
+
+.gameButtonWithMargin:hover {
+    background-color: #6d5197;
+}
 
 
 
-    .containerWholeGame {
-        display: flex;
-        justify-content: flex-start;
-        overflow: hidden;
-    }
-    
-    .containerGame {
-        background-color: #fff;
-        border-radius: 30px;
-        height: 650px;
-        width: 700px;
-        text-align: center;
-    }
-    
-    .containerWords {
-        margin-left: 50px;
-        margin-top: 50px;
-        background-color: #fff;
-        border-radius: 30px;
-        height: 475px;
-        width: 350px;
-        text-align: center;
-        overflow: scroll;
-    }
-    
-    .gameTitle {
-        color: #9d66f0;
-        font-size: 2rem;
-        margin: 2vh auto;
-        
-    }
-    
-    
-    .cell {
-        display: inline-block;
-        width: 30px; 
-        height: 30px; 
-        line-height: 20px; 
-        font-size: 20px;
-        box-sizing: border-box;
-        cursor: pointer;
-        padding-top: 2px;
-    }
-    
-    .wordList {
-        font-size: 1rem;
-        margin: 1vh auto;
-        margin-bottom: 0px;
-    }
-    
-    .gameTitle {
-        margin-bottom: 2vh;
-    }
-    
-    ul {
-        list-style-type: none;
-        padding: 3px;
-    }
-    
-    li {
-        padding:3px;
-    }
 
-    .gameButton {
-        background-color: #9d66f0;
-        color: #fff;
-        font-size: 10px;
-        padding: 8px 35px;
-        border: 1px solid transparent;
-        border: 1px solid white;
-        border-radius: 8px;
-        font-weight: 400;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-        cursor: pointer;
-        text-align: center;
-        margin-top: 1px;
-        width: 150px;
-        margin-top: 15px;
-    
-    }
-    
-    .gameButton:hover {
-        background-color: #6d5197;
-    }
-    
-    .gameButtonWithMargin {
-        background-color: #9d66f0;
-        color: #fff;
-        font-size: 10px;
-        padding: 8px 35px;
-        border: 1px solid transparent;
-        border: 1px solid white;
-        border-radius: 8px;
-        font-weight: 400;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-        cursor: pointer;
-        text-align: center;
-        margin-top: 1px;
-        width: 150px;
-        margin-top: 15px;
-    
-        margin-left: 1vw;
-    }
-    
-    .gameButtonWithMargin:hover {
-        background-color: #6d5197;
-    }
-    
+
+
+
 
 
