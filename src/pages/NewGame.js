@@ -40,7 +40,7 @@ export const NewGame = () => {
     const fetchSchoolList = async () => {
         try {
             const response = await axios.post(
-                'http://localhost:3001/api/schoolList' 
+                'https://zrbackend-dp12.onrender.com/api/schoolList' 
             );
 
             const extractedSchools = response.data.rows.map(school => ({
@@ -80,7 +80,7 @@ export const NewGame = () => {
     
       try {
         const response = await axios.post(
-            'http://localhost:3001/api/newGame/create', {
+            'https://zrbackend-dp12.onrender.com/api/newGame/create', {
                 name: gameName,
                 class_id: selectedClass,
                 teacher_id: teacherId
@@ -110,7 +110,7 @@ export const NewGame = () => {
         /*salji listu parova na back*/
         try {
             const response = await axios.post(
-                'http://localhost:3001/api/newGame/add', {
+                'https://zrbackend-dp12.onrender.com/api/newGame/add', {
                     gameId: gameId,
                     wordPairs: wordPairs
                 }
