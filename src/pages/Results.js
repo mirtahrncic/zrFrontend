@@ -47,7 +47,7 @@ export const Results = () => {
     const fetchSchoolList = async () => {
         try {
             const response = await axios.post(
-                'http://localhost:3001/api/schoolList' 
+                'https://zrbackend-dp12.onrender.com/api/schoolList' 
             );
 
             const extractedSchools = response.data.rows.map(school => ({
@@ -65,7 +65,7 @@ export const Results = () => {
         console.log("Selected school: ", selectedSchool);
         try {
             const response = await axios.post(
-                'http://localhost:3001/api/classList', {
+                'https://zrbackend-dp12.onrender.com/api/classList', {
                     school_id: selectedSchool
                 });
 
@@ -85,7 +85,7 @@ export const Results = () => {
         console.log("Selected class: ", selectedClass);
         try {
             const response = await axios.post(
-                'http://localhost:3001/api/gamesList', {
+                'https://zrbackend-dp12.onrender.com/api/gamesList', {
                     class_id: selectedClass
             });
 
@@ -131,7 +131,7 @@ export const Results = () => {
     const fetchResults = async () => {
         try {
             const response = await axios.post(
-                'http://localhost:3001/api/results', {
+                'https://zrbackend-dp12.onrender.com/api/results', {
                     game_id: selectedGame
                 });
 
@@ -152,7 +152,7 @@ export const Results = () => {
     const fetchStatistics = async () => {
         try {
             const response = await axios.post(
-                'http://localhost:3001/api/statistics', {
+                'https://zrbackend-dp12.onrender.com/api/statistics', {
                     game_id: selectedGame
                 });
             console.log("Most common errors: ", response.data);

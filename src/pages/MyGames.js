@@ -22,7 +22,7 @@ export const MyGames = () => {
     const fetchMyGames = async (teacherId) => {
         try {
             const response = await axios.post(
-                'http://localhost:3001/api/myGames/teacher', {
+                'https://zrbackend-dp12.onrender.com/api/myGames/teacher', {
                 teacherId: teacherId,
             });
             //console.log(response.data.games);

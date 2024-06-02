@@ -39,7 +39,7 @@ export const GameStudent = () => {
     const loadGame = async (gameId) => {
         try {
             const response = await axios.post(
-                'http://localhost:3001/api/game', {
+                'https://zrbackend-dp12.onrender.com/api/game', {
                     gameId: gameId
                  });
             const { croatianWords, foreignWordsWithPositions } = response.data;
@@ -179,7 +179,7 @@ export const GameStudent = () => {
         try {
             //predajem joj: gameId,studentId, studentName, time i broj pronadenih rijeci -> velicina liste found words
             const result = await axios.post(
-                'http://localhost:3001/api/gameFinish', {
+                'https://zrbackend-dp12.onrender.com/api/gameFinish', {
                     gameId: gameId,
                     studentId: localStorage.getItem("userId"),
                     time: totalTime,
@@ -189,7 +189,7 @@ export const GameStudent = () => {
                 });
 
                 const statistics = await axios.post(
-                    'http://localhost:3001/api/statisticsFinish', {
+                    'https://zrbackend-dp12.onrender.com/api/statisticsFinish', {
                         gameId: gameId,
                         studentId: localStorage.getItem("userId"),
                         notFound: unfoundCroatianWords

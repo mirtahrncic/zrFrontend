@@ -32,7 +32,7 @@ export const Login = () => {
     try {
       console.log(data);
       const response = await axios.post(
-        'http://localhost:3001/api/login/teacher', {
+        'https://zrbackend-dp12.onrender.com/api/login/teacher', {
           email: data.email,
           password: data.password
         }

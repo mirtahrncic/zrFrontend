@@ -22,7 +22,7 @@ export const Game = () => {
     const loadGame = async (gameId) => {
         try {
             const response = await axios.post(
-                'http://localhost:3001/api/game', {
+                'https://zrbackend-dp12.onrender.com/api/game', {
                 gameId: gameId,
             });
             const { croatianWords, foreignWords } = response.data;

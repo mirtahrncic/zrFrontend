@@ -58,7 +58,7 @@ export const NewGame = () => {
         console.log("Selected school: ", selectedSchool);
         try {
             const response = await axios.post(
-                'http://localhost:3001/api/classList', {
+                'https://zrbackend-dp12.onrender.com/api/classList', {
                     school_id: selectedSchool
                 });
 

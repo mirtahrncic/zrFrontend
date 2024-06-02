@@ -25,7 +25,7 @@ export const StudentHome = () => {
     const fetchMyGames = async (classId) => {
         try {
             const response = await axios.post(
-                'http://localhost:3001/api/myGames/student', {
+                'https://zrbackend-dp12.onrender.com/api/myGames/student', {
                 classId: classId,
             });
             //console.log(response.data.games);

@@ -61,7 +61,7 @@ export const StudentLogin = () => {
     async function fetchData() {
       try {
         const response = await axios.post(
-          'http://localhost:3001/api/schoolList' 
+          'https://zrbackend-dp12.onrender.com/api/schoolList' 
         );
 
         const extractedSchools = response.data.rows.map(school => ({
@@ -73,7 +73,7 @@ export const StudentLogin = () => {
         if (selectedSchool) {
           console.log("School id: ", selectedSchool);
           const response = await axios.post(
-            'http://localhost:3001/api/classList', {
+            'https://zrbackend-dp12.onrender.com/api/classList', {
                 school_id: selectedSchool
             });
 
@@ -87,7 +87,7 @@ export const StudentLogin = () => {
         if (selectedSchool && selectedClass) {
           console.log("Selected class: ", selectedClass);
           const response = await axios.post(
-            'http://localhost:3001/api/studentsList', {
+            'https://zrbackend-dp12.onrender.com/api/studentsList', {
                 class_id: selectedClass
             });
 
@@ -150,7 +150,7 @@ export const StudentLogin = () => {
 
     try {
       const response = await axios.post(
-        'http://localhost:3001/api/login/student', {
+        'https://zrbackend-dp12.onrender.com/api/login/student', {
           studentId: selectedStudent,
           password: animalsString
         });
