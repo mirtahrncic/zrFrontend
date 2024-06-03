@@ -11,6 +11,7 @@ zatamnjenje za gumb: #6d5197*/
     box-sizing: border-box;
     /*font-family: 'Montserrat', sans-serif;*/
     font-family: "Poetsen One", sans-serif;
+    overflow: hidden;
 }
 
 body {
@@ -1209,9 +1210,10 @@ hr {
 .gameTitle {
     color: #9d66f0;
     font-size: 2rem;
-    margin: 3vh auto;
+    margin: 2vh auto;
     
 }
+
 
 
 .cell {
@@ -1241,9 +1243,9 @@ ul {
     padding: 5px;
 }
 
-li {
+/*li {
     padding: 5px;
-}
+}*/
 
 
 
