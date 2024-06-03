@@ -82,8 +82,8 @@ export const GameStudent = () => {
             });
         });
 
-        for (let i = 0; i < 15; i++) {
-            for (let j = 0; j < 15; j++) {
+        for (let i = 0; i < 10; i++) {
+            for (let j = 0; j < 10; j++) {
                 if (tmp[i][j] === '0') {
                     const randomLetter = String.fromCharCode(Math.floor(Math.random() * 26) + 65);
                     tmp[i][j] = randomLetter;
