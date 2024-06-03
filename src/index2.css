@@ -47,7 +47,7 @@ body {
     max-width: 100%;
     min-height: 520px;
 
-    margin-top: 20px;
+    margin-top: 60px;
 }
 
 .button:hover {
@@ -274,7 +274,7 @@ body {
     width: 900px;
     height: 650px;
 
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .student-login-container {
@@ -669,7 +669,7 @@ body {
     width: 900px;
     height: 650px;
 
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 /* zivotinje */
@@ -1114,13 +1114,13 @@ hr {
     width: 600px;
     text-align: center;
 
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .containerWords {
     margin-left: 75px;
     /*margin-top: 50px;*/
-    margin-top: 70px;
+    margin-top: 80px;
     background-color: #fff;
     border-radius: 30px;
     height: 550px;
@@ -1203,8 +1203,8 @@ ul {
     cursor: pointer;
     text-align: center;
     margin-top: 1px;
-    width: 175px;
-    margin-top: 25px;
+    width: 190px;
+    margin-top: 35px;
 
 }
 
@@ -1226,8 +1226,8 @@ ul {
     cursor: pointer;
     text-align: center;
     margin-top: 1px;
-    width: 175px;
-    margin-top: 25px;
+    width: 195px;
+    margin-top: 35px;
 
     margin-left: 1vw;
 }
