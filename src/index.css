@@ -1182,17 +1182,17 @@ hr {
         background-color: #fff;
         border-radius: 30px;
         height: 500px;
-        width: 550px;
+        width: 450px;
         text-align: center;
     }
     
     .containerWords {
-        margin-left: 75px;
+        margin-left: 60px;
         margin-top: 50px;
         background-color: #fff;
         border-radius: 30px;
         height: 400px;
-        width: 250px;
+        width: 150px;
         text-align: center;
         /*overflow: scroll;*/
     }
@@ -1207,9 +1207,9 @@ hr {
     
     .cell {
         display: inline-block;
-        width: 35px; 
-        height: 35px; 
-        line-height: 30px; 
+        width: 30px; 
+        height: 30px; 
+        line-height: 25px; 
         /*border: 1px solid #ccc; */
         font-size: 20px;
         box-sizing: border-box;
