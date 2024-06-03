@@ -46,6 +46,8 @@ body {
     width: 800px;
     max-width: 100%;
     min-height: 520px;
+
+    margin-top: 20px;
 }
 
 .button:hover {
@@ -271,6 +273,8 @@ body {
 
     width: 900px;
     height: 650px;
+
+    margin-top: 20px;
 }
 
 .student-login-container {
@@ -664,6 +668,8 @@ body {
     overflow: hidden;
     width: 900px;
     height: 650px;
+
+    margin-top: 20px;
 }
 
 /* zivotinje */
@@ -845,6 +851,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; 
+
+    margin-top: 20px;
 }
 
 .gameItem {
@@ -1088,107 +1096,7 @@ hr {
 }
 
     
-
-
-/*###################*/
-
-
-/*@media only screen 
-  and (min-device-width: 821px) 
-  and (max-device-width: 1180px) 
-  and (orientation: landscape) {
-
-    .containerWholeGame {
-        display: flex;
-        justify-content: flex-start;
-    }
-    
-    .containerGame {
-        background-color: #fff;
-        border-radius: 30px;
-        height: 300px;
-        width: 350px;
-        text-align: center;
-    }
-    
-    .containerWords {
-        margin-left: 50px;
-        margin-top: 30px;
-        background-color: #fff;
-        border-radius: 30px;
-        height: 300px;
-        width: 100px;
-        text-align: center;
-    }
-    
-    .gameTitle {
-        color: #9d66f0;
-        font-size: 2.5rem;
-        margin: 4vh auto;
-        
-    }
-    
-    
-    .cell {
-        display: inline-block;
-        width: 30px; 
-        height: 30px; 
-        line-height: 25px; 
-        font-size: 20px;
-        box-sizing: border-box;
-        cursor: pointer;
-        padding-top: 3px;
-    }
-
-    .gameButton {
-        background-color: #9d66f0;
-        color: #fff;
-        font-size: 12px;
-        padding: 10px 45px;
-        border: 1px solid transparent;
-        border: 1px solid white;
-        border-radius: 8px;
-        font-weight: 600;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-        cursor: pointer;
-        text-align: center;
-        margin-top: 1px;
-        width: 150px;
-        margin-top: 20px;
-    
-    }
-    
-    .gameButton:hover {
-        background-color: #6d5197;
-    }
-    
-    .gameButtonWithMargin {
-        background-color: #9d66f0;
-        color: #fff;
-        font-size: 12px;
-        padding: 10px 45px;
-        border: 1px solid transparent;
-        border: 1px solid white;
-        border-radius: 8px;
-        font-weight: 600;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-        cursor: pointer;
-        text-align: center;
-        margin-top: 1px;
-        width: 150px;
-        margin-top: 20px;
-    
-        margin-left: 1vw;
-    }
-    
-    .gameButtonWithMargin:hover {
-        background-color: #6d5197;
-    }
-    
-    
-}*/
+/*###########*/
 
 
 
@@ -1206,13 +1114,13 @@ hr {
     width: 600px;
     text-align: center;
 
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .containerWords {
     margin-left: 75px;
     /*margin-top: 50px;*/
-    margin-top: 60px;
+    margin-top: 70px;
     background-color: #fff;
     border-radius: 30px;
     height: 550px;
