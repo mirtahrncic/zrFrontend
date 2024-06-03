@@ -21,7 +21,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /*height: 100vh;*/
+    height: 100vh;
 }
 
 .container {
@@ -1276,6 +1276,7 @@ hr {
         justify-content: center; /* Center the game horizontally */
         align-items: center; /* Center the game vertically */
         height: 100vh; /* Use full height of the screen */
+        width: 100vw;
         overflow: hidden; /* Prevent scrolling */
     }
     
