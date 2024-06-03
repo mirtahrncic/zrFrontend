@@ -11,7 +11,6 @@ zatamnjenje za gumb: #6d5197*/
     box-sizing: border-box;
     /*font-family: 'Montserrat', sans-serif;*/
     font-family: "Poetsen One", sans-serif;
-    overflow: hidden;
 }
 
 body {
@@ -1186,25 +1185,26 @@ hr {
 .containerWholeGame {
     display: flex;
     justify-content: flex-start;
+    overflow: hidden;
 }
 
 .containerGame {
     background-color: #fff;
     border-radius: 30px;
-    height: 600px;
-    width: 500px;
+    height: 650px;
+    width: 575px;
     text-align: center;
 }
 
 .containerWords {
     margin-left: 30px;
-    margin-top: 25px;
+    margin-top: 50px;
     background-color: #fff;
     border-radius: 30px;
-    height: 450px;
+    height: 550px;
     width: 350px;
     text-align: center;
-    /*overflow: scroll;*/
+    overflow: scroll;
 }
 
 .gameTitle {
@@ -1218,11 +1218,11 @@ hr {
 
 .cell {
     display: inline-block;
-    width: 40px; 
-    height: 40px; 
-    line-height: 30px; 
+    width: 45px; 
+    height: 45px; 
+    line-height: 35px; 
     /*border: 1px solid #ccc; */
-    font-size: 20px;
+    font-size: 25px;
     box-sizing: border-box;
     cursor: pointer;
     padding-top: 3px;
