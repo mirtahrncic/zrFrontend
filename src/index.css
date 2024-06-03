@@ -1184,10 +1184,11 @@ hr {
         height: 400px;
         width: 450px;
         text-align: center;
+        margin-left: 2vw;
     }
     
     .containerWords {
-        margin-left: 60px;
+        margin-left: 50px;
         margin-top: 50px;
         background-color: #fff;
         border-radius: 30px;
@@ -1195,6 +1196,7 @@ hr {
         width: 150px;
         text-align: center;
         /*overflow: scroll;*/
+        margin-right: 2vw;
     }
     
     .gameTitle {
