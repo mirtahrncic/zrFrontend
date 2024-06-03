@@ -1181,7 +1181,7 @@ hr {
     .containerGame {
         background-color: #fff;
         border-radius: 30px;
-        height: 500px;
+        height: 400px;
         width: 450px;
         text-align: center;
     }
@@ -1191,7 +1191,7 @@ hr {
         margin-top: 50px;
         background-color: #fff;
         border-radius: 30px;
-        height: 400px;
+        height: 300px;
         width: 150px;
         text-align: center;
         /*overflow: scroll;*/
