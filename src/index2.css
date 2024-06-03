@@ -19,7 +19,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     align-content: flex-start;
     justify-content: center;
     flex-direction: column;
