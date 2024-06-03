@@ -1197,14 +1197,14 @@ ul {
     border: 1px solid transparent;
     border: 1px solid white;
     border-radius: 8px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     cursor: pointer;
     text-align: center;
     margin-top: 1px;
-    width: 190px;
-    margin-top: 35px;
+    width: 175px;
+    margin-top: 25px;
 
 }
 
@@ -1220,14 +1220,14 @@ ul {
     border: 1px solid transparent;
     border: 1px solid white;
     border-radius: 8px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     cursor: pointer;
     text-align: center;
     margin-top: 1px;
-    width: 195px;
-    margin-top: 35px;
+    width: 175px;
+    margin-top: 25px;
 
     margin-left: 1vw;
 }
