@@ -1197,17 +1197,17 @@ hr {
     background-color: #fff;
     border-radius: 30px;
     height: 650px;
-    width: 575px;
+    width: 600px;
     text-align: center;
 }
 
 .containerWords {
-    margin-left: 30px;
+    margin-left: 50px;
     margin-top: 50px;
     background-color: #fff;
     border-radius: 30px;
     height: 550px;
-    width: 350px;
+    width: 300px;
     text-align: center;
     overflow: scroll;
 }
@@ -1223,18 +1223,18 @@ hr {
 
 .cell {
     display: inline-block;
-    width: 45px; 
-    height: 45px; 
-    line-height: 35px; 
+    width: 50px; 
+    height: 50px; 
+    line-height: 40px; 
     /*border: 1px solid #ccc; */
-    font-size: 25px;
+    font-size: 30px;
     box-sizing: border-box;
     cursor: pointer;
     padding-top: 3px;
 }
 
 .wordList {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin: 2vh auto;
     margin-bottom: 0px;
 }
@@ -1323,5 +1323,6 @@ ul {
     color: #9d66f0;
     font-size: 2rem;
     margin: 3vh auto;
+    margin-bottom: 5vh;
 }
 
