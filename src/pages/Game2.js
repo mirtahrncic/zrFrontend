@@ -64,7 +64,7 @@ export const GameStudent = () => {
     };
 
     const generateGrid = (words) => {
-        const tmp = Array.from({ length: 15 }, () => Array(15).fill('0'));
+        const tmp = Array.from({ length: 10 }, () => Array(10).fill('0'));
 
         words.forEach(wordData => {
             const [start_x, start_y] = wordData.start.split(',').map(Number);
