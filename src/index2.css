@@ -1201,13 +1201,13 @@ hr {
     width: 600px;
     text-align: center;
 
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .containerWords {
     margin-left: 75px;
     /*margin-top: 50px;*/
-    margin-top: 80px;
+    margin-top: 60px;
     background-color: #fff;
     border-radius: 30px;
     height: 550px;
