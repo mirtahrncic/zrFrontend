@@ -301,7 +301,7 @@ export const GameStudent = () => {
     return (
         <div className="containerWholeGame">
             <div className="containerGame">
-                <h1 className="gameTitle">{gameName}</h1>
+                <h1 className="gameTitleGame">{gameName}</h1>
                 {generated ? (
                     <div>
                         

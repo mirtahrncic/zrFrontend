@@ -11,6 +11,9 @@ zatamnjenje za gumb: #6d5197*/
     box-sizing: border-box;
     /*font-family: 'Montserrat', sans-serif;*/
     font-family: "Poetsen One", sans-serif;
+
+    height: 100vh;
+    width: 100vw;
 }
 
 body {
@@ -21,8 +24,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
-    width: 100vw;
+
 }
 
 .container {
@@ -1281,7 +1283,7 @@ ul {
     cursor: pointer;
     text-align: center;
     margin-top: 1px;
-    width: 100px;
+    width: 175px;
     margin-top: 25px;
 
 }
@@ -1304,7 +1306,7 @@ ul {
     cursor: pointer;
     text-align: center;
     margin-top: 1px;
-    width: 100px;
+    width: 175px;
     margin-top: 25px;
 
     margin-left: 1vw;
@@ -1312,5 +1314,11 @@ ul {
 
 .gameButtonWithMargin:hover {
     background-color: #6d5197;
+}
+
+.gameTitleGame {
+    color: #9d66f0;
+    font-size: 2rem;
+    margin: 3vh auto;
 }
 
