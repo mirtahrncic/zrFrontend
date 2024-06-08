@@ -5,6 +5,8 @@ svijetlija: #ad85e9
 tamnija: #9d66f0
 zatamnjenje za gumb: #6d5197*/
 
+@media only screen and (min-width: 600px) and (max-width: 1024px){
+
 
 
 * {
@@ -1151,6 +1153,7 @@ hr {
     align-items: center;
     text-align: center;
     overflow: scroll;
+    margin-bottom: 10px;
 }
 
 
@@ -1174,7 +1177,7 @@ hr {
 }
 
 .gameTitle {
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
 }
 
 ul {
@@ -1260,3 +1263,4 @@ ul {
     margin-bottom: 4vh;
 }
 
+}
