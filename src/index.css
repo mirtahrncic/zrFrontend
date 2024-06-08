@@ -5,6 +5,10 @@ svijetlija: #ad85e9
 tamnija: #9d66f0
 zatamnjenje za gumb: #6d5197*/
 
+@media screen and (min-width: 1701px){
+    
+
+
 * {
     margin: 0;
     padding: 0;
@@ -1319,4 +1323,4 @@ ul {
     margin-bottom: 4vh;
 }
 
-
+}

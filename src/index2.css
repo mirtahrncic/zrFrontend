@@ -6,6 +6,8 @@ tamnija: #9d66f0
 zatamnjenje za gumb: #6d5197*/
 
 
+@media screen and (max-width: 1700px) and (orientation: landscape){
+    
 
 
 
@@ -1152,9 +1154,17 @@ hr {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    overflow: scroll;
-    margin-bottom: 10px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    flex-grow: 1; /* Take up remaining space between title and button */
 }
+
+.wordsListScrollable ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
 
 
 
@@ -1261,4 +1271,5 @@ ul {
     font-size: 2rem;
     margin: 3vh auto;
     margin-bottom: 4vh;
+}
 }
