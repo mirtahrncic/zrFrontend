@@ -271,7 +271,7 @@ export const Results = () => {
                         <div key={result.student_id} className="resultsColumns">
                             <div className="column">{result.name}</div>
                             <div className="column">{result.time}s</div>
-                            <div className="column">{result.nmbOfWords}/8 riječi</div>
+                            <div className="column">{result.nmbOfWords}/9 riječi</div>
                         </div>
                     ))}
    
