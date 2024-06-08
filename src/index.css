@@ -870,7 +870,9 @@ body {
 
 /*#########################*/
 
-.containerWholeGame {
+/*ovaj dio uzimam iz index2*/
+
+/*.containerWholeGame {
     display: flex;
     justify-content: flex-start;
 }
@@ -892,7 +894,7 @@ body {
     width: 350px;
     text-align: center;
     /*overflow: scroll;*/
-}
+/*}
 
 .gameTitle {
     color: #9d66f0;
@@ -908,7 +910,7 @@ body {
     height: 40px; 
     line-height: 30px; 
     /*border: 1px solid #ccc; */
-    font-size: 20px;
+ /*   font-size: 20px;
     box-sizing: border-box;
     cursor: pointer;
     padding-top: 3px;
@@ -931,7 +933,10 @@ ul {
 
 li {
     padding: 5px;
-}
+}*/
+
+
+/*DALJE NORMALNO*/
 
 
 
@@ -1162,6 +1167,158 @@ hr {
     width: 200px;
 }
 
+
+/*PREUZETO IZ INDEX2*/
+
     
+.containerWholeGame {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    overflow: hidden;
+}
+
+.containerGame {
+    background-color: #fff;
+    border-radius: 30px;
+    height: 650px;
+    width: 600px;
+    text-align: center;
+
+    margin-top: 30px;
+}
+
+.containerWords {
+    margin-left: 75px;
+    /*margin-top: 50px;*/
+    margin-top: 80px;
+    background-color: #fff;
+    border-radius: 30px;
+    height: 550px;
+    width: 300px;
+    text-align: center;
+    /*overflow: scroll;*/
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gameTitle {
+    color: #9d66f0;
+    font-size: 2rem;
+    margin: 2vh auto;
+    
+}
+
+.containerWordsScrollable {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: scroll;
+    margin-bottom: 10px;
+}
+
+
+
+.cell {
+    display: inline-block;
+    width: 50px; 
+    height: 50px; 
+    line-height: 40px; 
+    /*border: 1px solid #ccc; */
+    font-size: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding-top: 3px;
+}
+
+.wordList {
+    font-size: 1.5rem;
+    margin: 2vh auto;
+    margin-bottom: 0px;
+}
+
+.gameTitle {
+    margin-bottom: 2vh;
+}
+
+ul {
+    list-style-type: none;
+    padding: 5px;
+}
+
+.cell.selected {
+    background-color: #b690ef;
+    border-radius: 30px;
+}
+
+.cell.found {
+    background-color: #cdbbe9;
+    border-radius: 30px;
+}
+
+.wordList.strikethrough {
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+}
+
+.gameButton {
+    background-color: #9d66f0;
+    color: #fff;
+    font-size: 12px;
+    padding: 7px 30px;
+    border: 1px solid transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1px;
+    width: 175px;
+    margin-top: 15px;
+
+}
+
+.gameButton:hover {
+    background-color: #6d5197;
+}
+
+.gameButtonWithMargin {
+    background-color: #9d66f0;
+    color: #fff;
+    font-size: 12px;
+    padding: 7px 30px;
+    border: 1px solid transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 1px;
+    width: 175px;
+    margin-top: 15px;
+
+    margin-left: 1vw;
+}
+
+.gameButtonWithMargin:hover {
+    background-color: #6d5197;
+}
+
+.gameTitleGame {
+    color: #9d66f0;
+    font-size: 2rem;
+    margin: 3vh auto;
+    margin-bottom: 4vh;
+}
 
 
