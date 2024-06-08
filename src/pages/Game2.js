@@ -317,6 +317,7 @@ export const GameStudent = () => {
             <div className="containerWords">
                 <h1 className="gameTitle">Tražimo<br />ove riječi:</h1>
                 <div className="wordsListScrollable">
+                    <hr />
                 <ul>
                     {croatianWords.map((wordObj, index) => (
                         <li
@@ -327,6 +328,7 @@ export const GameStudent = () => {
                         </li>
                     ))}
                 </ul>
+                <hr />
                 </div>
 
                 {generated && (

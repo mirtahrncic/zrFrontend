@@ -267,16 +267,7 @@ export const Results = () => {
                 </div>
                 <div className="scrollableContent">
 
-                <div className="resultsColumns">
-        <div className="column">Marko Markić</div>
-        <div className="column">10:23s</div>
-        <div className="column">10/8 riječi</div>
-    </div>
-    <div className="resultsColumns">
-        <div className="column">Ana Aničić</div>
-        <div className="column">12:45s</div>
-        <div className="column">8/8 riječi</div>
-    </div>
+        
     {results.map(result => (
                         <div key={result.student_id} className="resultsColumns">
                             <div className="column">{result.name}</div>
