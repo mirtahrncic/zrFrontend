@@ -256,7 +256,6 @@ export const Results = () => {
 
             {resultsDisplay && (
                 <div className='containerResults'>
-                    <div className="fixedContent">
                     <h1 className='resultsTitle'>{className} : {gameName}</h1>
                     <div className="resultsColumns">
                         <div className="column">Učenik</div>
@@ -264,8 +263,8 @@ export const Results = () => {
                         <div className="column">Pronađene riječi</div>
                     </div>
                 <hr />
-                </div>
-                <div className="scrollableContent">
+                
+                
 
         
     {results.map(result => (
@@ -276,7 +275,6 @@ export const Results = () => {
                         </div>
                     ))}
    
-    </div>
 
     <hr />
     <button className="buttonResult" onClick={handleFinishButton}>Završi pregled</button>
